@@ -1,0 +1,229 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  position: relative;
+}
+
+section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* start header */
+
+.header-left-logo > img {
+  width: 80px;
+  height: 80px;
+}
+
+.header-right-up > a {
+  background-color: #fae9ac;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header-left-logo {
+  grid-column: 2 / span 1;
+}
+
+.header-right {
+  grid-column: 3 / span 2;
+}
+
+.header-right-up {
+  color: black;
+  text-align: right;
+  margin-right: 35px;
+}
+
+.header-right-down > ul > li {
+  list-style-type: none;
+}
+.header-right-down {
+  margin-top: 25px;
+}
+
+.header-right-down ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(6, 1fr);
+}
+.header-right-down li {
+  text-align: center;
+}
+.header-img {
+  background-image: url("./1.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+/* end header */
+
+/* tours section start */
+
+.tours-title {
+  grid-column: 1 / span 5;
+  text-align: center;
+  font-size: 25px;
+  color: #234d71;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+
+}
+
+.selection-one {
+  grid-column: 2 / span 1;
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.selection-with {
+  width: 200px;
+  height: 30px;
+  border-radius: 0%;
+}
+.selection-two {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.tours-button > button {
+  text-align: center;
+  width: 130px;
+  height: 30px;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  background-color: #0597c3;
+  margin-bottom: 25px;
+}
+
+.card-grid {
+  grid-column: 2 / span 3;
+  margin-bottom: 10px;
+}
+
+.card-grid-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image > img {
+  width: 230px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+.image > img:hover {
+  width: 200px;
+  height: 160px;
+  overflow: hidden;
+}
+.card {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.card > p {
+  color: rgb(102, 101, 101);
+  font-size: 10px;
+}
+
+.card > h5 {
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.card > button {
+  width: 70px;
+  height: 24px;
+  border-radius: 30px;
+  border: 1px solid #0597c3;
+  background-color: white;
+  font-size: 11px;
+  color: #0597c3;
+}
+.card > button:hover {
+  background-color: #0597c3;
+  color: white;
+}
+
+.price {
+  background-color: rgb(207, 87, 133);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  position: absolute;
+  right: 40px;
+  top: 150px;
+}
+
+/* tours section end */
+
+.link{
+    grid-column: 4/span 1;
+    text-align: right;
+    font-size: 14px;
+    color: #0597c3;
+}
+.link>a{
+    color: #0597c3;
+    text-decoration: none;}
+    
+.link>i{
+    font-size: 8px;
+}
+.create-tour{
+    grid-column: 2/ span 3;
+    text-align: center;
+    background-image: url('https://starttravel.az/themes/starttravel/assets/css/icons/geo-map.svg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    align-content: center;
+    position: relative;
+    
+}
+.create-tour::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.create-tour>h3{
+    font-size: 33px;
+    color: #0597c3 ;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+.create-tour>button{
+    width: 150px;
+    height: 35px;
+    color: white;
+    background-color: #0597c3;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* map section start */
